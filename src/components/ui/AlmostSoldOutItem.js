@@ -1,16 +1,19 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function AlmostSoldOutItem({ productId }) {
   const [productItem, setProductItem] = useState([]);
-
+  const [images, setImages]=useState([]);
+  
   useEffect(() => {
-    fetch(`http://localhost:3005/products/${productId}`)
+    axios.get(`http://localhost:8080/image/getAll/${productId}`)
+    .then(res=> setImages(res.data));
+    
+    axios.get(`http://localhost:8080/product/get/${productId}`)
       .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setProductItem(data);
+        console.log(res.data);
+        setProductItem(res.data);
       });
   }, [productId]);
 

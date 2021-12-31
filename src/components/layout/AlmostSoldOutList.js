@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import AlmostSoldOutItem from '../ui/AlmostSoldOutItem';
 
@@ -5,12 +6,9 @@ function AlmostSoldOutList() {
   const [soldOutList, setSoldOutList] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3005/productList')
+    axios.get('http://localhost:8080/product/getAll')
       .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        const filter = data.filter((item) => item.stock < 10);
+        const filter = res.data.filter((item) => item.stockQuantity < 10);
         setSoldOutList(filter);
         // for (let i = 0; i < data.length; i++) {
         //   if (data[i].stock < 10) {
@@ -38,7 +36,7 @@ function AlmostSoldOutList() {
             soldOutList.map((almostSoldProduct) => (
               <AlmostSoldOutItem
                 key={almostSoldProduct.id}
-                productId={almostSoldProduct.productId}
+                productId={almostSoldProduct.id}
               />
             ))}
         </div>

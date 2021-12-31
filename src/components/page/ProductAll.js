@@ -7,7 +7,7 @@ function ProductAll() {
   const [allItem, setAllItem] = useState();
   useEffect(() => {
     axios
-      .get('http://localhost:3005/products')
+      .get('http://localhost:8080/product/getAll')
       .then((res) => setAllItem(res.data));
   }, []);
 
@@ -36,8 +36,8 @@ function ProductAll() {
           <div class="arrival-product new-arrival-2 position-relative pt-45">
             <div class="row">
               {allItem &&
-                allItem.map((item, idx) => (
-                  <CollectionItem key={idx} item={item} id={1} name={'seol'} />
+                allItem.map((item) => (
+                  <CollectionItem key={item.id} item={item}/>
                 ))}
             </div>
           </div>

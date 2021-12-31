@@ -5,7 +5,12 @@ import axios from 'axios';
 
 function CollectionItem({ item }) {
   const [cartData, setCartData] = useState();
+
   useEffect(() => {
+    
+    axios.get(`http://localhost:8080/image/getAll/${item.id}`)
+    .then(res=> console.log(res.data));
+
     axios.get('http://localhost:3006/cartLists').then((res) => {
       setCartData(res.data);
     });
