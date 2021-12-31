@@ -1,0 +1,25 @@
+{
+  "wishLists": [
+    {
+      "productName": "Louis Vuitton no.1",
+      "id": 1,
+      "price": 280000,
+      "titleImage": "01.png",
+      "stock": 41
+    },
+    {
+      "productName": "Louis Vuitton no.7",
+      "id": 7,
+      "price": 570000,
+      "titleImage": "07.png",
+      "stock": 88
+    },
+    {
+      "productName": "Louis Vuitton no.4",
+      "id": 4,
+      "price": 550000,
+      "titleImage": "04.png",
+      "stock": 3
+    }
+  ]
+}

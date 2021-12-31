@@ -1,0 +1,1709 @@
+{
+  "Trends": [
+    {
+      "id": 1,
+      "trendId": 1,
+      "trendImg": "01.png",
+      "trendName": "Nadezhda",
+      "trendDetail": "Influencer's Pick"
+    },
+    {
+      "id": 2,
+      "trendId": 2,
+      "trendImg": "02.png",
+      "trendName": "Anastasia",
+      "trendDetail": "Style of the year"
+    },
+    {
+      "id": 3,
+      "trendId": 3,
+      "trendImg": "03.png",
+      "trendName": "Igor",
+      "trendDetail": "Winter recommendation"
+    }
+  ],
+  "Instagrams": [
+    {
+      "id": 1,
+      "productId": 1,
+      "instaImage": "01.png"
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "instaImage": "02.png"
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "instaImage": "03.png"
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "instaImage": "04.png"
+    }
+  ],
+  "Sliders": [
+    {
+      "id": 1,
+      "productId": 1
+    },
+    {
+      "id": 2,
+      "productId": 2
+    }
+  ],
+  "wishLists": [
+    {
+      "id": 1,
+      "productId": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Neckless"
+    },
+    {
+      "id": 2,
+      "categoryName": "Ring"
+    },
+    {
+      "id": 3,
+      "categoryName": "Bracelet"
+    }
+  ],
+  "categoryGenders": [
+    {
+      "id": 1,
+      "gender": "men"
+    },
+    {
+      "id": 2,
+      "gender": "women"
+    }
+  ],
+  "sizes": [
+    {
+      "id": 1,
+      "sizeName": "S"
+    },
+    {
+      "id": 2,
+      "sizeName": "M"
+    },
+    {
+      "id": 3,
+      "sizeName": "L"
+    },
+    {
+      "id": 4,
+      "sizeName": "XL"
+    },
+    {
+      "id": 5,
+      "sizeName": "XXL"
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "colorName": "Black"
+    },
+    {
+      "id": 2,
+      "colorName": "White"
+    },
+    {
+      "id": 3,
+      "colorName": "Brown"
+    },
+    {
+      "id": 4,
+      "colorName": "Beige"
+    }
+  ],
+  "productList": [
+    {
+      "id": 1,
+      "productId": 1,
+      "productIsShow": true,
+      "isNew": false,
+      "categoryId": 1,
+      "stock": 41
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "productIsShow": true,
+      "isNew": false,
+      "categoryId": 1,
+      "stock": 6
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 1,
+      "stock": 58
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 1,
+      "stock": 3
+    },
+    {
+      "id": 5,
+      "productId": 5,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 1,
+      "stock": 41
+    },
+    {
+      "id": 6,
+      "productId": 6,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 1,
+      "stock": 13
+    },
+    {
+      "id": 7,
+      "productId": 7,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 1,
+      "stock": 88
+    },
+    {
+      "id": 8,
+      "productId": 8,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 1,
+      "stock": 4
+    },
+    {
+      "id": 9,
+      "productId": 9,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 1,
+      "stock": 5
+    },
+    {
+      "id": 10,
+      "productId": 10,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 1,
+      "stock": 33
+    },
+    {
+      "id": 11,
+      "productId": 11,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 2,
+      "stock": 55
+    },
+    {
+      "id": 12,
+      "productId": 12,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 2,
+      "stock": 2
+    },
+    {
+      "id": 13,
+      "productId": 13,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 2,
+      "stock": 5
+    },
+    {
+      "id": 14,
+      "productId": 14,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 2,
+      "stock": 24
+    },
+    {
+      "id": 15,
+      "productId": 15,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 2,
+      "stock": 22
+    },
+    {
+      "id": 16,
+      "productId": 16,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 2,
+      "stock": 52
+    },
+    {
+      "id": 17,
+      "productId": 17,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 2,
+      "stock": 42
+    },
+    {
+      "id": 18,
+      "productId": 18,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 2,
+      "stock": 2
+    },
+    {
+      "id": 19,
+      "productId": 19,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 2,
+      "stock": 22
+    },
+    {
+      "id": 20,
+      "productId": 20,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 2,
+      "stock": 11
+    },
+    {
+      "id": 21,
+      "productId": 21,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 3,
+      "stock": 27
+    },
+    {
+      "id": 22,
+      "productId": 22,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 3,
+      "stock": 33
+    },
+    {
+      "id": 23,
+      "productId": 23,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 3,
+      "stock": 1
+    },
+    {
+      "id": 24,
+      "productId": 24,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 3,
+      "stock": 27
+    },
+    {
+      "id": 25,
+      "productId": 25,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 3,
+      "stock": 22
+    },
+    {
+      "id": 26,
+      "productId": 26,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 3,
+      "stock": 44
+    },
+    {
+      "id": 27,
+      "productId": 27,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 3,
+      "stock": 2
+    },
+    {
+      "id": 28,
+      "productId": 28,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 3,
+      "stock": 12
+    },
+    {
+      "id": 29,
+      "productId": 29,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 3,
+      "stock": 8
+    },
+    {
+      "id": 30,
+      "productId": 30,
+      "productIsShow": true,
+      "isNew": true,
+      "categoryId": 3,
+      "stock": 12
+    }
+  ],
+  "todayDeal": [
+    {
+      "id": 1,
+      "productName": "Season Rings",
+      "productDetail": "Winter recommended ring mass sale ",
+      "price": 290000,
+      "sale": 30,
+      "productTitleImage": "01.png"
+    },
+    {
+      "id": 2,
+      "productName": "Season Neckless",
+      "productDetail": "Winter recommended neckless mass sale ",
+      "price": 590000,
+      "sale": 60,
+      "productTitleImage": "02.png"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productId": 1,
+      "productName": "Louis Vuitton no.1",
+      "categoryId": 1,
+      "categoryGenderId": 2,
+      "price": 280000,
+      "sale": 10,
+      "sizeId": [1, 2, 3, 4, 5],
+      "colorId": [1, 2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 41,
+      "rate": 4,
+      "productDetail": "디올 하우스의 코드를 담은 우아하고 은은한 매력의 Clair D Lune목걸이입니다. \n 가느다란 골드 피니시 메탈 체인 한가운데 화이트 크리스탈 CD 시그니처가 돋보입니다.\n 단독으로 착용하거나 다른 목걸이와 레이어링하기 좋은 심플한 타임리스 스타일의 액세서리입니다.",
+      "eventTitle": "Louis Vuitton Neckless no.1",
+      "productTitleImage": "01.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md01.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md02.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md03.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md04.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "productName": "Louis Vuitton no.2",
+      "categoryId": 1,
+      "categoryGenderId": 1,
+      "price": 370000,
+      "sale": 20,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 6,
+      "rate": 4,
+      "productDetail": "디올 하우스의 코드를 담은 우아하고 은은한 매력의 Clair D Lune 목걸이입니다. \n 가느다란 팔라듐 피니시 메탈 체인 한가운데 화이트 크리스탈 CD 시그니처가 돋보입니다. \n단독으로 착용하거나 다른 목걸이와 레이어링하기 좋은 심플한 타임리스 스타일의 액세서리입니다.",
+      "eventTitle": "Louis Vuitton Neckless no.2",
+      "productTitleImage": "02.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md02.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md05.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md02.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md08.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "productName": "Louis Vuitton no.3",
+      "categoryId": 1,
+      "categoryGenderId": 2,
+      "price": 330000,
+      "sale": 15,
+      "sizeId": [1, 2, 3, 4, 5],
+      "colorId": [1, 2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 58,
+      "rate": 5,
+      "productDetail": "우아한 타임리스 스타일의 Dio(r)evolution 목걸이입니다. \n 골드 피니시 메탈 체인에 DIOR 레터가 달려 있으며, 화이트 크리스탈로 파베 세팅한 O 레터가 목에 반짝임을 더합니다. \n Dio(r)evolution 라인의 다양한 아이템과 함께 매치하기 좋으며 손쉽게 스타일링할 수 있습니다.",
+      "eventTitle": "Louis Vuitton Neckless no.3",
+      "productTitleImage": "03.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md11.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md22.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md13.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md14.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "productName": "Louis Vuitton no.4",
+      "categoryId": 1,
+      "categoryGenderId": 1,
+      "price": 550000,
+      "sale": 15,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 3,
+      "rate": 5,
+      "productDetail": ".빅투아르 드 카스텔란은 새로운 행운의 상징과 함께 Rose de vents 컬렉션의 이야기를 새롭게 써 내려갑니다. \n이번 챕터를 위해, 그녀는 무슈 디올이 사랑해 마지않은 모티브인 하트를 선택했습니다.\n테두리의 라이스 그레인 브레이드 장식이 돋보이는 메달은 움직임에 따라 체인 위에서 자유롭게 회전하며 하트 또는 하드 스톤의 우아한 자태를 드러냅니다.",
+      "eventTitle": "Louis Vuitton Neckless no.4",
+      "productTitleImage": "04.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md30.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md22.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md23.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md18.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "productId": 5,
+      "productName": "Louis Vuitton no.5",
+      "categoryId": 1,
+      "categoryGenderId": 2,
+      "price": 650000,
+      "sale": 30,
+      "sizeId": [1, 2, 3, 4, 5],
+      "colorId": [1, 2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 41,
+      "rate": 4,
+      "productDetail": "미국 명문대 스타일로 재해석한 상징적인 디올 하우스 시그니처가 돋보이는 목걸이입니다. \n실버 피니시 브라스 체인이 특징이며, Christian Dior Atelier 펜던트와 상단의 리브 디테일, 세미 모빌이 시선을 사로잡습니다.\nCD Icon 시그니처로 장식한 조절 가능한 잠금장치를 사용해 길이를 다양하게 연출할 수 있습니다. \n다양한 Christian Dior Atelier 아이템과 함께 스타일링하기 좋습니다.",
+      "eventTitle": "Louis Vuitton Neckless no.5",
+      "productTitleImage": "05.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md22.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md23.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md24.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md25.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "productId": 6,
+      "productName": "Louis Vuitton no.6",
+      "categoryId": 1,
+      "categoryGenderId": 1,
+      "price": 180000,
+      "sale": 15,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 13,
+      "rate": 5,
+      "productDetail": "디올 하우스의 코드를 담은 우아하고 은은한 매력의 Clair D Lune 목걸이입니다. \n가느다란 팔라듐 피니시 메탈 체인 한가운데 화이트 크리스탈 CD 시그니처가 돋보입니다. \n단독으로 착용하거나 다른 목걸이와 레이어링하기 좋은 심플한 타임리스 스타일의 액세서리입니다.",
+      "eventTitle": "Louis Vuitton Neckless no.6",
+      "productTitleImage": "06.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md26.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md27.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md28.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md29.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "productId": 7,
+      "productName": "Louis Vuitton no.7",
+      "categoryId": 1,
+      "categoryGenderId": 2,
+      "price": 570000,
+      "sale": 20,
+      "sizeId": [1, 2, 3, 4, 5],
+      "colorId": [1, 2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 88,
+      "rate": 4,
+      "productDetail": "우아하고 세련된 미학이 깃든 Clair D Lune 목걸이입니다.\n정교하게 제작된 골드 피니시 메탈 소재의 더블 디자인으로, 화이트 레진 진주를 파베 세팅한 CD 시그니처와 하트 참이 돋보입니다. \nClair D Lune 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Louis Vuitton Neckless no.7",
+      "productTitleImage": "07.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md30.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md11.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md12.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md22.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "productId": 8,
+      "productName": "Louis Vuitton no.8",
+      "categoryId": 1,
+      "categoryGenderId": 1,
+      "price": 330000,
+      "sale": 70,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 4,
+      "rate": 3,
+      "productDetail": "모던하고 간결한 디자인의 Petit CD 목걸이입니다. \n골드 피니시 메탈 소재로 정교하게 제작된 디자인으로 화이트 크리스탈과 CD 시그니처 장식이 특징입니다.\nPetit CD 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Louis Vuitton Neckless no.8",
+      "productTitleImage": "08.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md22.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md11.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md30.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md07.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "productId": 9,
+      "productName": "Louis Vuitton no.9",
+      "categoryId": 1,
+      "categoryGenderId": 1,
+      "price": 510000,
+      "sale": 20,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 5,
+      "rate": 4,
+      "productDetail": "우아한 타임리스 스타일의 Clair D Lune 목걸이입니다. \n골드 피니시 메탈 소재로 정교하게 제작된 멀티체인 디자인으로 화이트 레진 진주 디테일, 화이트 크리스탈을 파베 세팅한 CD 시그니처 장식이 돋보입니다. \nClair D Lune 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Louis Vuitton Neckless no.9",
+      "productTitleImage": "09.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md02.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md09.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md06.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md08.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "productId": 10,
+      "productName": "Louis Vuitton no.10",
+      "categoryId": 1,
+      "categoryGenderId": 1,
+      "price": 230000,
+      "sale": 35,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 33,
+      "rate": 5,
+      "productDetail": "Monsieur Dior이 사랑한 행운의 별을 Victoire de Castellane이 팔각별 디자인의 바람 장미 실루엣으로 재해석해 선보입니다. \n움직일 때마다 그레인 브레이드로 감싼 메달이 체인 위에서 앞뒤로 회전합니다.",
+      "eventTitle": "Louis Vuitton Neckless no.10",
+      "productTitleImage": "10.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md21.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md15.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md18.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md11.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "productId": 11,
+      "productName": "Bulgari no.1",
+      "categoryId": 2,
+      "categoryGenderId": 1,
+      "price": 730000,
+      "sale": 45,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 55,
+      "rate": 3,
+      "productDetail": "Monsieur Dior이 사랑한 행운의 별을 Victoire de Castellane이 팔각별 디자인의 바람 장미 실루엣으로 새롭게 해석해 선보입니다.  \n 스톤 무게는 평균 무게를 기준으로 합니다. 모든 디올 Fine Jewelry 제품은 장인의 손길로 만들어진 제품으로써 미세한 흠집 및 손상으로도 제품의 가치에 영향이 있을 수 있으므로 ,\n 손상 또는 흠집이 있거나 사용 흔적이 있는 경우 교환/환불이 어려울 수 있습니다.",
+      "eventTitle": "Bulgari Ring no.1",
+      "productTitleImage": "11.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md22.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md28.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md26.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md23.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "productId": 12,
+      "productName": "Bulgari no.2",
+      "categoryId": 2,
+      "categoryGenderId": 1,
+      "price": 730000,
+      "sale": 45,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 2,
+      "rate": 5,
+      "productDetail": "Monsieur Dior이 사랑한 행운의 별을 Victoire de Castellane이 팔각별 디자인의 바람 장미 실루엣으로 새롭게 해석해 선보입니다. \n 스톤 무게는 평균 무게를 기준으로 합니다. 모든 디올 Fine Jewelry 제품은 장인의 손길로 만들어진 제품으로써 미세한 흠집 및 손상으로도 제품의 가치에 영향이 있을 수 있으므로, \n 손상 또는 흠집이 있거나 사용 흔적이 있는 경우 교환/환불이 어려울 수 있습니다.",
+      "eventTitle": "Bulgari Ring no.2",
+      "productTitleImage": "12.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md14.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md24.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md28.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md29.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "productId": 13,
+      "productName": "Bulgari no.3",
+      "categoryId": 2,
+      "categoryGenderId": 1,
+      "price": 330000,
+      "sale": 25,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 5,
+      "rate": 4,
+      "productDetail": "로즈골드 피니시 메탈 링크와 중앙의 CD 시그니처가 어우러진 우아하면서도 볼드한 Petit CD 반지입니다.\n크리스탈 세팅과 크리스챤 디올이 가장 좋아했던 상징인 별 실루엣 참이 디자인을 완성합니다.\n 모던하고 임팩트 있는 스타일로, 데일리 아이템으로 착용하기 좋습니다.",
+      "eventTitle": "Bulgari Ring no.3",
+      "productTitleImage": "13.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md11.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md16.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md18.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md12.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "productId": 14,
+      "productName": "Bulgari no.4",
+      "categoryId": 2,
+      "categoryGenderId": 1,
+      "price": 330000,
+      "sale": 35,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 24,
+      "rate": 5,
+      "productDetail": "모던하면서도 타임리스한 스타일을 지닌 Dio(r)evolution 반지입니다. \n링크 디자인이 돋보이는 골드 피니시 메탈 디자인으로, 화이트 크리스탈을 파베 세팅한 DIOR 시그니처가 돋보입니다. \nDio(r)evolution 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Bulgari Ring no.4",
+      "productTitleImage": "14.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md23.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md27.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md15.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md12.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "productId": 15,
+      "productName": "Bulgari no.5",
+      "categoryId": 2,
+      "categoryGenderId": 1,
+      "price": 730000,
+      "sale": 45,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 22,
+      "rate": 3,
+      "productDetail": "우아하고 세련된 매력의 Petit CD 반지입니다. \n3줄의 골드 피니시 메탈 반지 위로 화이트 크리스탈이 파베 세팅된 CD 시그니처가 돋보입니다. 자그마한 화이트 레진 진주가 전체 디자인에 품격을 더합니다.\n 다양한 Petit CD 아이템과 매치하기 좋은 섬세한 반지입니다.",
+      "eventTitle": "Bulgari Ring no.5",
+      "productTitleImage": "15.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md26.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md28.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md15.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md10.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "productId": 16,
+      "productName": "Bulgari no.6",
+      "categoryId": 2,
+      "categoryGenderId": 1,
+      "price": 730000,
+      "sale": 45,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 52,
+      "rate": 4,
+      "productDetail": ".이번 컬렉션의 무드를 고스란히 담은 볼드하고 강렬한 디자인의 Dior Sea Garden 반지입니다. \n골드 피니시 메탈 메시-이펙트 밴드로 제작된 디자인으로 화이트 레진 진주와 스터드 장식이 돋보입니다. \nDior Sea Garden 라인의 다양한 아이템과 함께 매치하기 좋은 세련된 반지입니다.",
+      "eventTitle": "Bulgari Ring no.6",
+      "productTitleImage": "16.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md20.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md10.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md01.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md09.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "productId": 17,
+      "productName": "Bulgari no.7",
+      "categoryId": 2,
+      "categoryGenderId": 1,
+      "price": 270000,
+      "sale": 15,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 42,
+      "rate": 5,
+      "productDetail": "빈티지한 디자인과 디올 하우스의 모던한 미학이 어우러진 30 Montaigne 반지입니다. \n골드 피니시 메탈 소재의 밴드 위로 CHRISTIAN DIOR PARIS와 CD를 새긴 메달 장식이 돋보입니다. \n30 Montaigne 라인의 다양한 아이템과 스타일링하기 좋은 타임리스한 반지입니다.",
+      "eventTitle": "Bulgari Ring no.7",
+      "productTitleImage": "17.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md05.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md11.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md18.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md23.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "productId": 18,
+      "productName": "Bulgari no.8",
+      "categoryId": 2,
+      "categoryGenderId": 1,
+      "price": 810000,
+      "sale": 35,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 2,
+      "rate": 3,
+      "productDetail": "심플한 디자인에서 모던함이 느껴지는 Petit CD 반지입니다. \n골드 피니시 메탈 소재로 정교하게 제작된 디자인으로 화이트 크리스탈과 CD 시그니처 장식이 돋보입니다.\n Petit CD 라인의 다양한 아이템과 함께 매치하기 좋은 섬세하고 우아한 반지입니다.",
+      "eventTitle": "Bulgari Ring no.8",
+      "productTitleImage": "18.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md21.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md17.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md07.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md02.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "productId": 19,
+      "productName": "Bulgari no.9",
+      "categoryId": 2,
+      "categoryGenderId": 1,
+      "price": 990000,
+      "sale": 50,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 22,
+      "rate": 5,
+      "productDetail": "모던하면서도 타임리스한 디자인이 인상적인 CD Navy 반지입니다. \n골드 피니시 메탈 밴드와 CD 시그니처 참이 특징입니다. CD Navy 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Bulgari Ring no.9",
+      "productTitleImage": "19.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md16.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md27.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md15.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md29.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "productId": 20,
+      "productName": "Bulgari no.10",
+      "categoryId": 2,
+      "categoryGenderId": 1,
+      "price": 580000,
+      "sale": 15,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 11,
+      "rate": 4,
+      "productDetail": "패션쇼에서 선보인 타임리스하고 볼드한 디자인의 Dio(r)evolution 반지입니다. \n앤틱 골드 피니시 메탈 밴드에 장식된 골드 톤 침수정이 돋보입니다. Dio(r)evolution 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Bulgari Ring no.10",
+      "productTitleImage": "20.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md30.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md22.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md28.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md11.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "productId": 21,
+      "productName": "Dior no.1",
+      "categoryId": 3,
+      "categoryGenderId": 1,
+      "price": 530000,
+      "sale": 25,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 27,
+      "rate": 5,
+      "productDetail": "우아하고 세련된 Clair D Lune 팔찌입니다.\n 골드 피니시 메탈 소재의 더블 디자인으로, 화이트 레진 진주를 파베 세팅한 CD 시그니처와 하트 참이 돋보입니다. \nClair D Lune 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Dior Bracelet no.1",
+      "productTitleImage": "21.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md24.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md12.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md17.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md14.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "productId": 22,
+      "productName": "Dior no.2",
+      "categoryId": 3,
+      "categoryGenderId": 1,
+      "price": 630000,
+      "sale": 35,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 33,
+      "rate": 5,
+      "productDetail": "우아한 타임리스 스타일의 CD Navy 팔찌입니다.\n 골드 피니시 메탈 소재와 함께 그라데이션 실루엣의 화이트 레진 진주로 제작되었으며, 화이트 크리스탈을 파베 세팅한 중앙의 CD 시그니처가 돋보입니다. \nCD Navy 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Dior Bracelet no.2",
+      "productTitleImage": "22.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md21.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md11.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md15.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md29.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "productId": 23,
+      "productName": "Dior no.3",
+      "categoryId": 3,
+      "categoryGenderId": 1,
+      "price": 830000,
+      "sale": 35,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 1,
+      "rate": 5,
+      "productDetail": "우아함과 세련미를 모두 갖춘 30 Montaigne 팔찌입니다. \n네 줄의 화이트 글래스 비즈로 이루어진 앤틱 골드 피니시 메탈 디자인으로 화이트 크리스탈을 파베 세팅한 CD 시그니처가 시선을 사로잡습니다. \n30 Montaigne 라인의 다양한 아이템과 함께 스타일링하기 좋습니다.",
+      "eventTitle": "Dior Bracelet no.3",
+      "productTitleImage": "23.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md05.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md09.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md13.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md18.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "productId": 24,
+      "productName": "Dior no.4",
+      "categoryId": 3,
+      "categoryGenderId": 1,
+      "price": 130000,
+      "sale": 10,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 27,
+      "rate": 4,
+      "productDetail": "우아하고 세련된 Dio(r)evolution 팔찌입니다. \n골드 피니시 메탈 트위스트 체인으로 제작된 디자인으로 화이트 레진 진주와 함께 홀마크 클로버와 별 참으로 장식되었으며 DIOR 시그니처가 스타일을 완성합니다. \nDio(r)evolution 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Dior Bracelet no.4",
+      "productTitleImage": "24.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md21.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md12.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md16.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md14.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "productId": 25,
+      "productName": "Dior no.5",
+      "categoryId": 3,
+      "categoryGenderId": 1,
+      "price": 130000,
+      "sale": 10,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 22,
+      "rate": 4,
+      "productDetail": ".홀마크 Dior Caro 백에서 영감을 받아 모던하면서도 타임리스한 디자인으로 완성한 CD Navy 팔찌입니다. \n골드 피니시 메탈 소재의 멀티체인 스타일로 미니멀하게 CD 이니셜을 배치한 링크가 돋보입니다. CD Navy 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Dior Bracelet no.5",
+      "productTitleImage": "25.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md21.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md26.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md10.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md06.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "productId": 26,
+      "productName": "Dior no.6",
+      "categoryId": 3,
+      "categoryGenderId": 1,
+      "price": 550000,
+      "sale": 20,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 44,
+      "rate": 4,
+      "productDetail": "이번 컬렉션의 무드를 고스란히 담은 섬세하고 볼드한 Dior Sea Garden 커프스 팔찌입니다. \n까나쥬 모티브의 메시-이펙트 골드 피니시 메탈 소재로 제작된 견고한 디자인입니다. 섬세한 화이트 레진 진주와 스터드 장식이 돋보입니다. \nDior Sea Garden 라인의 다양한 아이템과 함께 매치하기 좋습니다.",
+      "eventTitle": "Dior Bracelet no.6",
+      "productTitleImage": "26.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md09.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md19.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md29.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md15.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "productId": 27,
+      "productName": "Dior no.7",
+      "categoryId": 3,
+      "categoryGenderId": 1,
+      "price": 130000,
+      "sale": 7,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 2,
+      "rate": 5,
+      "productDetail": "볼드하고 강렬한 무드가 돋보이는 30 Montaigne 팔찌입니다. 골드 피니시 메탈 소재로 제작되었으며, 스터드가 있는 링크 디자인과 CD 시그니처 장식이 특징입니다. \n30 Montaigne 라인의 다양한 아이템과 함께 스타일링하기 좋습니다.",
+      "eventTitle": "Dior Bracelet no.7",
+      "productTitleImage": "27.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md21.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md12.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md16.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md26.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "productId": 28,
+      "productName": "Dior no.8",
+      "categoryId": 3,
+      "categoryGenderId": 1,
+      "price": 930000,
+      "sale": 22,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 12,
+      "rate": 5,
+      "productDetail": "빈티지한 디자인과 디올 하우스의 모던한 미학이 어우러진 30 Montaigne 팔찌입니다. \n골드 피니시 메탈 소재로 정교하게 제작된 더블 체인 디자인으로 CHRISTIAN DIOR PARIS와 CD 시그니처를 새긴 메달 장식이 돋보입니다.\n 30 Montaigne 라인의 다양한 아이템과 함께 매치하기 좋은 타임리스한 액세서리입니다.",
+      "eventTitle": "Dior Bracelet no.8",
+      "productTitleImage": "28.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md05.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md07.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md15.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md25.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "productId": 29,
+      "productName": "Dior no.9",
+      "categoryId": 3,
+      "categoryGenderId": 1,
+      "price": 930000,
+      "sale": 50,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 8,
+      "rate": 3,
+      "productDetail": "모던하면서도 타임리스한 스타일의 30 Montaigne 팔찌입니다. \n앤틱 골드 피니시 메탈 체인 중앙에 자리한 CD 시그니처가 돋보입니다. 다양한 30 Montaigne 아이템과 매치하기 좋습니다.",
+      "eventTitle": "Dior Bracelet no.9",
+      "productTitleImage": "29.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md04.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md01.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md28.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md23.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "productId": 30,
+      "productName": "Dior no.30",
+      "categoryId": 3,
+      "categoryGenderId": 1,
+      "price": 830000,
+      "sale": 30,
+      "sizeId": [1, 2, 3, 4],
+      "colorId": [2, 3, 4],
+      "isSlide": true,
+      "isTrend": true,
+      "isBest": true,
+      "isTodayDeal": true,
+      "isAlmostSold": true,
+      "isInstagram": true,
+      "stock": 12,
+      "rate": 4,
+      "productDetail": "2줄의 골드 피니시 메탈 체인 중 하나를 장식한 CD 시그니처가 돋보이는 Petit CD 팔찌입니다. \n작은 화이트 크리스탈로 은은하게 장식된 다른 체인은 크리스챤 디올이 가장 좋아했던 상징인 별이 반짝이는 화이트 크리스탈로 파베 세팅되어 있습니다. \n우아한 타임리스 스타일로, 데일리 아이템으로 착용하기 좋습니다.",
+      "eventTitle": "Dior Bracelet no.10",
+      "productTitleImage": "30.png",
+      "productImage": [
+        {
+          "id": 1,
+          "imageUrl": "md22.png",
+          "hoverImageUrl": "4-hover.jpg"
+        },
+        {
+          "id": 2,
+          "imageUrl": "md05.png",
+          "hoverImageUrl": "5-hover.jpg"
+        },
+        {
+          "id": 3,
+          "imageUrl": "md15.png",
+          "hoverImageUrl": "6-hover.jpg"
+        },
+        {
+          "id": 4,
+          "imageUrl": "md20.png",
+          "hoverImageUrl": "7-hover.jpg"
+        }
+      ]
+    }
+  ]
+}
