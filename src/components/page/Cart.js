@@ -7,18 +7,13 @@ function Cart() {
   const [cartCheck, setCartCheck] = useState(false);
 
   useEffect(() => {
-    const url = 'http://localhost:8080/cartList/getAll/1';
-    // axios.get(url).then((res) => {
-    //   setCart(res.data);
-    //   console.log(res.data);
-    // });
-
+    const url = 'http://localhost:8080/cart/all/1';
     axios.get(url).then(res => {
       setCart(res.data);
       console.log(res.data);
     })
-
   }, [cartCheck]);
+
 
   const [priceSum, setPriceSum] = useState(0);
 

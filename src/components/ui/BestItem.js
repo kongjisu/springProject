@@ -9,8 +9,9 @@ function BestItem({ productId }) {
   const [cartData, setCartData] = useState();
   const [wishData, setWishData] = useState();
   const [isTrue, setIsTrue] = useState(false);
+  const [check, setCheck] = useState(false);
   const navigate = useNavigate();
-
+  
   useEffect(() => {
     fetch(`http://localhost:8080/product/get/${productId}`)
       .then((res) => {
@@ -18,18 +19,17 @@ function BestItem({ productId }) {
       })
       .then((data) => {
         setProductItem(data);
-        console.log(data)
       });
   }, [productId]);
 
   useEffect(() => {
-    axios.get('http://localhost:3006/cartLists').then((res) => {
+    axios.get('http://localhost:8080/cart/all/1').then((res) => {
       setCartData(res.data);
     });
-  }, []);
+  }, [check]);
 
   useEffect(() => {
-    axios.get('http://localhost:3007/wishLists').then((res) => {
+    axios.get('http://localhost:8080/wish/all/1').then((res) => {
       setWishData(res.data);
       for (let i = 0; i < res.data.length; i++) {
         if (productId === res.data[i].id) {
@@ -40,18 +40,14 @@ function BestItem({ productId }) {
   }, [productId]);
 
   const addWishList = () => {
-    const posturl = 'http://localhost:3007/wishLists';
+    const posturl = 'http://localhost:8080/wish/add';
     if (wishData.length === 0) {
       axios
         .post(posturl, {
-          productName: productItem.productName,
-          id: productItem.productId,
-          price: productItem.price,
-          titleImage: productItem.productTitleImage,
-          stock: productItem.stock,
+          wishId: 1,
+          productId: productItem.id
         })
         .then((Response) => {
-          console.log(Response.status);
           if (Response.status === 201) {
             navigate('/wishList');
           }
@@ -66,11 +62,8 @@ function BestItem({ productId }) {
       if (i === wishData.length - 1) {
         axios
           .post(posturl, {
-            productName: productItem.productName,
-            id: productItem.id,
-            price: productItem.price,
-            titleImage: productItem.productTitleImage,
-            stock: productItem.stock,
+            wishId: 1,
+            productId: productItem.id
           })
           .then((Response) => {
             console.log(Response.status);
@@ -83,10 +76,6 @@ function BestItem({ productId }) {
   };
 
   const handleAddCart = () => {
-    const putUrl = `http://localhost:3006/cartLists/${productItem.id}`;
-
-    console.log(putUrl);
-
     const postUrl = 'http://localhost:8080/cart/add';
     if (cartData.length === 0) {
       axios
@@ -95,32 +84,28 @@ function BestItem({ productId }) {
           productId: productItem.id
         })
         .then((Response) => {
+          setCheck(!check);
           if (Response.status === 201) {
             navigate('/cart');
           }
-        })
-
+        })  
         .catch(function (error) {});
-    }
+    } 
 
     // put
     for (let i = 0; i < cartData.length; i++) {
-      if (cartData[i].productName === productItem.productName) {
+      if (cartData[i].product.id === productItem.id) {
         if (
           window.confirm(
             '이미 장바구니에 존재하는 상품입니다. 그래도 추가하시겠읍니까?'
           )
         ) {
           axios
-            .put(putUrl, {
-              productName: productItem.productName,
-              id: productItem.productId,
-              quantity: cartData[i].quantity + 1,
-              price: productItem.price,
-              titleImage: productItem.productTitleImage,
+            .put("http://localhost:8080/cart", {
+              id : cartData[i].id,
+              quantity : cartData[i].quantity + 1
             })
             .then((Response) => {
-              console.log(Response.status);
               if (Response.status === 200) {
                 navigate('/cart');
               }
@@ -147,7 +132,8 @@ function BestItem({ productId }) {
           .catch(function (error) {});
       }
     }
-  };
+  }
+  
 
   return (
     <div className='col-xl-4 col-lg-4 col-md-6 col-sm-6 grid-item cat1 cat4'>

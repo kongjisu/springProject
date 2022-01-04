@@ -7,7 +7,8 @@ function WishlistArea() {
   const [wishCheck, setWishCheck] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:3007/wishLists').then((Response) => {
+    axios.get('http://localhost:8080/wish/all/1')
+    .then((Response) => {
       setWishListItem(Response.data);
     });
   }, [wishCheck]);

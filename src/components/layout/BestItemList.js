@@ -3,6 +3,7 @@ import SectionTitle from '../widget/SectionTitle';
 import Categories from '../widget/Categories';
 import BestItem from '../ui/BestItem';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 function BestItemList() {
   const [productList, setProductList] = useState([]);
@@ -12,13 +13,9 @@ function BestItemList() {
   };
 
   useEffect(() => {
-    fetch('http://localhost:8080/product/getAll')
+    axios.get('http://localhost:8080/product/getAll')
       .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setProductList(data);
-        console.log(data);
+        setProductList(res.data);
       });
   }, []);
 

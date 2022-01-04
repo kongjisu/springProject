@@ -4,16 +4,15 @@ import React, { useEffect, useRef, useState } from 'react';
 function CartItem({ item, cartCheck, setCartCheck }) {
   const cartItemQty = useRef();
   const [cnt, setCnt] = useState(item.quantity);
-  console.log(item);
   useEffect(() => {
     console.log("CartItem");
     const url = `http://localhost:8080/image/getAll/${item.product.id}`
     axios.get(url).then(res => console.log(res.data));
-  }, []);
+  }, [item.product.id]);
 
-
+  // delete
   const cartDelete = () => {
-    const url = `http://localhost:3006/cartLists/${item.id}/`;
+    const url = `http://localhost:8080/cart/${item.id}`;
     if (window.confirm('장바구니에서 삭제하시겠읍니까?')) {
       axios.delete(url).then((res) => {
         setCartCheck(!cartCheck);
@@ -25,19 +24,22 @@ function CartItem({ item, cartCheck, setCartCheck }) {
 
   const handleCartList = (e) => {
     e.preventDefault();
-    setCartCheck(!cartCheck);
-    setCnt(parseInt(cartItemQty.current.value));
-
-    fetch(`http://localhost:3006/cartLists/${item.id}`, {
-      method: 'PUT',
-      headers: {
-        'content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        ...item,
-        quantity: parseInt(cartItemQty.current.value),
-      }),
-    });
+    // setCartCheck(!cartCheck);
+    // setCnt(parseInt(cartItemQty.current.value));
+    axios.put("http://localhost:8080/cart", {
+      id: item.id,
+      quantity: cartItemQty.current.value
+    })
+    // fetch(`http://localhost:3006/cartLists/${item.id}`, {
+    //   method: 'PUT',
+    //   headers: {
+    //     'content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({
+    //     ...item,
+    //     quantity: parseInt(cartItemQty.current.value),
+    //   }),
+    // });
   };
 
   return (
@@ -66,7 +68,7 @@ function CartItem({ item, cartCheck, setCartCheck }) {
                 min='0'
                 max='500'
                 type='number'
-                defaultValue={item.product.quantity}
+                defaultValue={item.quantity}
                 ref={cartItemQty}
                 onChange={handleCartList}
               />
@@ -85,7 +87,7 @@ function CartItem({ item, cartCheck, setCartCheck }) {
             min='1'
             max='500'
             type='number'
-            defaultValue={item.product.quantity}
+            defaultValue={item.quantity}
             ref={cartItemQty}
             onChange={handleCartList}
           />
