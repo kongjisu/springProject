@@ -4,17 +4,19 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function WishItem({ item, wishCheck, setWishCheck }) {
+  console.log(item);
   const [cartData, setCartData] = useState([]);
 
   const navigate = useNavigate();
+
   const deleteItem = () => {
     axios
-      .delete(`http://localhost:3007/wishLists/${item.id}`)
+      .delete(`http://localhost:8080/wish/${item.id}`)
       .then((res) => setWishCheck(!wishCheck));
   };
 
   useEffect(() => {
-    axios.get('http://localhost:3006/cartLists').then((res) => {
+    axios.get('http://localhost:8080/cartLists').then((res) => {
       setCartData(res.data);
     });
   }, []);
@@ -103,16 +105,16 @@ function WishItem({ item, wishCheck, setWishCheck }) {
           </div>
           <div className='product-name mt-auto mb-auto ml-30'>
             <h6>
-              <a href='shop_detalis.html'>{item.productName}</a>
+              <a href='shop_detalis.html'>{item.product.productName}</a>
             </h6>
           </div>
         </div>
       </td>
       <td>
         <div className='product-price '>
-          <span>{item.price && item.price.toLocaleString()} 원</span>
+          <span>{item.product.price && item.product.price.toLocaleString()} 원</span>
           <div className='cart-mobile-content d-none'>
-            <span>{item.stock} 개 남음</span>
+            <span>{item.product.stockQuantity} 개 남음</span>
             <div className='cart-button text-center float-right mt-10'>
               <div onClick={addCart}>Add to cart</div>
               <button onClick={deleteItem} className='mt-15 mt-lg-0'>
@@ -124,7 +126,7 @@ function WishItem({ item, wishCheck, setWishCheck }) {
       </td>
       <td>
         <div className='stock-detalis'>
-          <span>{item.stock} 개 남음</span>
+          <span>{item.product.stockQuantity} 개 남음</span>
           <div className='cart-button text-center float-right'>
             <Link onClick={addCart} to=''>
               Add to cart

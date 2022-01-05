@@ -8,6 +8,7 @@ function BestItem({ productId }) {
   const [productItem, setProductItem] = useState({});
   const [cartData, setCartData] = useState();
   const [wishData, setWishData] = useState();
+  const [wishCheck, setWishCheck] = useState(false);
   const [isTrue, setIsTrue] = useState(false);
   const [check, setCheck] = useState(false);
   const navigate = useNavigate();
@@ -31,34 +32,33 @@ function BestItem({ productId }) {
   useEffect(() => {
     axios.get('http://localhost:8080/wish/all/1').then((res) => {
       setWishData(res.data);
+     
       for (let i = 0; i < res.data.length; i++) {
-        if (productId === res.data[i].id) {
+        if (productId === res.data[i].product.id) {
           setIsTrue(true);
         }
       }
     });
-  }, [productId]);
+  }, [wishCheck]);
 
   const addWishList = () => {
     const posturl = 'http://localhost:8080/wish/add';
-    if (wishData.length === 0) {
-      axios
-        .post(posturl, {
-          wishId: 1,
-          productId: productItem.id
-        })
-        .then((Response) => {
-          if (Response.status === 201) {
-            navigate('/wishList');
-          }
-        });
+   if(wishData.length === 0) {
+      axios.post(posturl, {
+        wishId: 1,
+        productId: productItem.id
+      }).then(() => {
+        setWishCheck(!wishCheck);
+      })
     }
-    for (let i = 0; i < wishData.length; i++) {
-      if (wishData[i].id === productItem.id) {
-        alert('이미 들어있어요');
+    else {
+    for(let i = 0; i < wishData.length; i++) {
+      if( productId === wishData[i].product.id) {
+        // delete
+        axios.delete(`http://localhost:8080/wish/${wishData[i].id}`);
+        setIsTrue(false);
         break;
       }
-
       if (i === wishData.length - 1) {
         axios
           .post(posturl, {
@@ -71,8 +71,10 @@ function BestItem({ productId }) {
               navigate('/wishList');
             }
           });
-      }
+      }    
     }
+  }
+
   };
 
   const handleAddCart = () => {
