@@ -1,17 +1,16 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 function Categories({ handleClick }) {
   const [categoryNames, setCategoryNames] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3005/categories')
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setCategoryNames(data);
-      });
-  }, []);
+    axios.get('http://localhost:8080/category/getAll')
+    .then(res => {
+      console.log(res.data);
+      setCategoryNames(res.data);
+    });
+    }, []);
   return (
     <div className="arrival-menu text-center pt-20">
       <button onClick={handleClick} className="abtn" data-filter="*">

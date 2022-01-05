@@ -8,8 +8,17 @@ import axios from 'axios';
 function BestItemList() {
   const [productList, setProductList] = useState([]);
   const [filterItem, setFilterItem] = useState([]);
+  
   const handleClick = (id) => {
-    setFilterItem(productList.filter((item) => item.categoryId === id));
+    setFilterItem([]);
+  
+    if(typeof id === 'number') {
+      axios.get(`http://localhost:8080/product/${id}`)
+      .then(res => {
+        setFilterItem(res.data);
+    })
+    }
+    
   };
 
   useEffect(() => {
