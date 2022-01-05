@@ -55,7 +55,7 @@ function BestItem({ productId }) {
     for(let i = 0; i < wishData.length; i++) {
       if( productId === wishData[i].product.id) {
         // delete
-        axios.delete(`http://localhost:8080/wish/${wishData[i].id}`);
+        axios.delete(`http://localhost:8080/wish/delete/${wishData[i].id}`);
         setIsTrue(false);
         break;
       }

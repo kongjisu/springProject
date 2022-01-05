@@ -11,7 +11,7 @@ function WishItem({ item, wishCheck, setWishCheck }) {
 
   const deleteItem = () => {
     axios
-      .delete(`http://localhost:8080/wish/${item.id}`)
+      .delete(`http://localhost:8080/wish/delete/${item.id}`)
       .then((res) => setWishCheck(!wishCheck));
   };
 
