@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ScrollTop from './components/layout/ScrollTop';
-import Header from './components/layout/Header';
-import Home from './components/page/Home';
-import Footers from './components/layout/Footers';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cart from './components/page/Cart';
 import ProductDetail from './components/page/ProductDetail';
@@ -22,8 +19,26 @@ import './css/default.css';
 import './style.css';
 import Wishlist from './components/page/Wishlist';
 import axios from 'axios';
+import Login from './components/page/Login';
+import { Box, Modal, Switch, Typography, Button } from '@mui/material';
+import Main from './components/page/Main';
+import Home from './components/page/Home';
+import Footer from './components/layout/Footers';
+import Test from './components/page/Test';
+import SignUp from './components/page/SignUp';
 
 function App() {
+  
+  
+  const [open, setOpen] = useState(false);
+    const handleOpen = () => {
+        setOpen(true);
+    }
+    
+      const handleClose = () => {
+        setOpen(false);
+    }
+
   // const [products, setProducts] = useState([]);
   // useEffect(()=>{
   //   // axios.get('http://localhost:8080/product/getAll').then(res => console.log(res.data));
@@ -36,23 +51,26 @@ function App() {
   useEffect(() => {
 
     axios.get('http://localhost:8080/image/getAll/1')
-    .then(res=> console.log(res.data));
-  },[]);
+      .then(res => console.log(res.data));
+  }, []);
   return (
+<>
+    <Modal
+      open={open}
+      // onClose={handleClose}
+      aria-labelledby="modal-modal-title"
+      aria-describedby="modal-modal-description"
+    >
+      <Login handleClose={handleClose}/>
+    </Modal>
     <BrowserRouter>
-      <ScrollTop />
-      <TopScroll />
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/detail/:id" element={<ProductDetail />} />
-        <Route path="/ProductAll" element={<ProductAll />} />
-        <Route path="/wishList" element={<Wishlist />} />
+        <Route path="/" element={<Test handleOpen={handleOpen} handleClose={handleClose}/>}/>
+        <Route path="/signin" element={<Login />}/> 
+        <Route path="/signup" element={<SignUp />}/>      
       </Routes>
-      <Footers />
     </BrowserRouter>
-    
+    </>
   );
 }
 

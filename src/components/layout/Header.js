@@ -2,9 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import img from '../../logo.png';
 import axios from 'axios';
+import { Modal } from '@mui/material';
+import { Login } from '@mui/icons-material';
 
-function Header() {
+function Header({handleOpen, handleClose}) {
   const [cart, setCart] = useState([]);
+  
+
+  
 
   useEffect(() => {
     const url = 'http://localhost:3006/cartLists';
@@ -126,7 +131,7 @@ function Header() {
                     </li>
                     <li className='position-relative'>
                       <span className='product-cart'>
-                        <i className='fas fa-user'></i>
+                        <i className='fas fa-user' onClick={handleOpen}></i>
                       </span>
                       <div className='product-on-sale pb-30'>
                         <div className='product-close-icon'>
