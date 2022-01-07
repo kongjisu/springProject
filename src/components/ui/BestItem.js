@@ -11,15 +11,21 @@ function BestItem({ productId }) {
   const [wishCheck, setWishCheck] = useState(false);
   const [isTrue, setIsTrue] = useState(false);
   const [check, setCheck] = useState(false);
+  const [images, setImages] = useState([]);
   const navigate = useNavigate();
   
   useEffect(() => {
-    fetch(`http://localhost:8080/product/get/${productId}`)
+    axios.get(`http://localhost:8080/image/getAll/${productId}`)
+    .then(res => {
+      setImages(res.data);
+      console.log(res.data);
+    });
+  }, []);
+
+  useEffect(() => {
+    axios.get(`http://localhost:8080/product/get/${productId}`)
       .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setProductItem(data);
+        setProductItem(res.data);
       });
   }, [productId]);
 
@@ -149,7 +155,7 @@ function BestItem({ productId }) {
         <div className='arrival-img'>
           <Link to={`/detail/${productItem.id}`}>
             <img
-              src={`./img/products/${productItem.productTitleImage}`}
+              src={images.length > 0 && (`./img/products/${images[0].imageUrl}`)}
               alt='bag'
               width={350}
               height={350}

@@ -4,6 +4,12 @@ import React, { useEffect, useRef, useState } from 'react';
 function CartItem({ item, cartCheck, setCartCheck }) {
   const cartItemQty = useRef();
   const [cnt, setCnt] = useState(item.quantity);
+  const [image, setImage] = useState();
+  useEffect(() => {
+    axios.get(`http://localhost:8080/image/getAll/${item.product.id}`)
+    .then(res => setImage(res.data[0]))
+  })
+
   useEffect(() => {
     console.log("CartItem");
     const url = `http://localhost:8080/image/getAll/${item.product.id}`
@@ -48,7 +54,7 @@ function CartItem({ item, cartCheck, setCartCheck }) {
         <div className='d-flex'>
           <div className='cart-img'>
             <img
-              src={`./img/products/${item.titleImage}`}
+              src={image && `./img/products/${image.imageUrl}`}
               width='150px'
               alt='product'
             />

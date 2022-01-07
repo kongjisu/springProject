@@ -34,34 +34,19 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignIn({handleClose}) {
-    // const [loginForm, setLoginForm] = useState();
-
-    // const handleChange = (event) => {
-    //     const {name, value} = event.target;
-    //     setLoginForm({...loginForm, [name] : value})
-    // }
+export default function SignIn({handleClose, handleOpen}) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    // axios.post(url, {userName, password})
-    // // eslint-disable-next-line no-console
-    // console.log({
-    //   email: data.get('email'),
-    //   password: data.get('password'),
-    // });
     const loginForm = {
         userName: data.get('email'),
         password: data.get('password')
     }
-    const config = {
-        headers: {
-            'Content-type': 'application/x-www-form-urlencoded'
-        }
-    }
+     
+    
     console.log(loginForm);
-    axios.post('http://localhost:8080/api/login', loginForm, config);
+    axios.post('http://localhost:8080/api/login', loginForm);
   };
 
   return (
@@ -125,7 +110,7 @@ export default function SignIn({handleClose}) {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="/signup" variant="body2">
+              <Link href="#" variant="body2" onClick={handleOpen}>
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

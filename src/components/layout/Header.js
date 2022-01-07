@@ -5,14 +5,14 @@ import axios from 'axios';
 import { Modal } from '@mui/material';
 import { Login } from '@mui/icons-material';
 
-function Header({handleOpen, handleClose}) {
+function Header({handleOpen}) {
   const [cart, setCart] = useState([]);
   
 
   
 
   useEffect(() => {
-    const url = 'http://localhost:3006/cartLists';
+    const url = `http://localhost:8080/cartList/getAll`;
     axios.get(url).then((Response) => {
       setCart(Response.data);
     });

@@ -8,42 +8,52 @@ function ProductDetailContents() {
   const urlCheck = useLocation();
   const addUrl = '../../img/products/';
   const [shopDetail, setShopDetail] = useState([]);
-  const [MiniPhoto, setMiniPhoto] = useState([]);
+  const [image, setImage] = useState([]);
+  const [miniImages, setMiniImages] = useState([]);
   const { id } = useParams();
-
+  const [check, setCheck] = useState(false);
   useEffect(() => {
-    axios.get(`http://localhost:3005/products/${id}`).then((res) => {
-      setShopDetail(res.data);
-      setMiniPhoto(res.data.productImage);
-    });
+    axios.get(`http://localhost:8080/image/getAll/${id}`)
+    .then((res) => {
+      console.log(res.data);
+      setImage(res.data);
+     }, []);
+
+     axios.get(`http://localhost:8080/product/get/${id}`)
+     .then(res=>{
+       
+       setShopDetail(res.data);
+     })
+
   }, [id]);
 
   const [cartData, setCartData] = useState();
   const navigate = useNavigate();
 
+  useEffect(()=> {
+    axios.get(`http://localhost:8080/cart/all/1`)
+    .then(res => console.log(res.data));
+  }, []);
+
   useEffect(() => {
-    axios.get('http://localhost:3006/cartLists').then((res) => {
+    axios.get(`http://localhost:8080/cart/all/1`)
+    .then((res) => {
+      console.log(res.data)
       setCartData(res.data);
     });
   }, []);
 
   const handleAddCart = () => {
-    const putUrl = `http://localhost:3006/cartLists/${shopDetail.productId}`;
-
-    console.log(putUrl);
-
-    const postUrl = 'http://localhost:3006/cartLists';
-    console.log();
+    const putUrl = `http://localhost:8080/cart`;
+    const postUrl = `http://localhost:8080/cart/add`;
+    
     if (cartData.length === 0) {
-      axios
-        .post(postUrl, {
-          productName: shopDetail.productName,
-          id: shopDetail.productId,
-          quantity: 1,
-          price: shopDetail.price,
-          titleImage: shopDetail.productTitleImage,
+      axios.post(postUrl, {
+          cartId : 1,
+          productId: shopDetail.id
         })
         .then((Response) => {
+          setCheck(!check);
           if (Response.status === 201) {
             navigate('/cart');
           }
@@ -54,7 +64,7 @@ function ProductDetailContents() {
 
     // put
     for (let i = 0; i < cartData.length; i++) {
-      if (cartData[i].productName === shopDetail.productName) {
+      if (cartData[i].id===shopDetail.id) {
         if (
           window.confirm(
             '이미 장바구니에 존재하는 상품입니다. 그래도 추가하시겠읍니까?'
@@ -62,11 +72,8 @@ function ProductDetailContents() {
         ) {
           axios
             .put(putUrl, {
-              productName: shopDetail.productName,
-              id: shopDetail.productId,
-              quantity: cartData[i].quantity + 1,
-              price: shopDetail.price,
-              titleImage: shopDetail.productTitleImage,
+              id : shopDetail.id,           
+              quantity : cartData[i].quantity + 1
             })
             .then((Response) => {
               console.log(Response.status);
@@ -84,11 +91,8 @@ function ProductDetailContents() {
         // post
         axios
           .post(postUrl, {
-            productName: shopDetail.productName,
-            id: shopDetail.productId,
-            quantity: 1,
-            price: shopDetail.price,
-            titleImage: shopDetail.productTitleImage,
+            cartId : 1,
+            productId : shopDetail.id,  
           })
           .then((Response) => {
             if (Response.status === 201) {
@@ -107,25 +111,25 @@ function ProductDetailContents() {
         <div class='row'>
           <div class='col-xl-1 col-lg-1 col-md-2 col-sm-12'>
             <div class='nav nav-tabs ' id='approach-tabs' role='tablist'>
-              {MiniPhoto.map((item) => (
-                <a
-                  class='product-thumb mb-15 active'
-                  id='nav-thumb1'
-                  data-toggle='tab'
-                  href='#nav-product1'
-                  role='tab'
-                  aria-controls='nav-product1'
-                  aria-selected='true'
-                >
-                  <img
-                    src={`${addUrl}${item.imageUrl}`}
-                    alt='img'
-                    key={id}
-                    width={85}
-                    height={126}
-                  />
-                </a>
-              )).slice(0, 4)}
+              {image.length > 0 && (image.slice(1).map(img => {
+                return (<a
+                class='product-thumb mb-15 active'
+                id='nav-thumb1'
+                data-toggle='tab'
+                href='#nav-product1'
+                role='tab'
+                aria-controls='nav-product1'
+                aria-selected='true'
+              >
+                <img
+                  src={`${addUrl}${img.imageUrl}`}
+                  alt='img'
+                  key={id}
+                  width={85}
+                  height={126}
+                />
+              </a>)
+            }))}
             </div>
           </div>
           <div class='col-xl-11 col-lg-11 col-md-10 col-sm-12'>
@@ -138,10 +142,9 @@ function ProductDetailContents() {
                   aria-labelledby='nav-thumb1'
                 >
                   <img
-                    src={
-                      urlCheck
-                        ? `${addUrl + shopDetail.productTitleImage}`
-                        : `${shopDetail.productTitleImage}`
+                    src={image.length > 0 && (urlCheck
+                        ? `${addUrl + image[0].imageUrl}`
+                        : `${image[0].imageUrl}`)
                     }
                     alt='img'
                     width={550}
@@ -214,7 +217,7 @@ function ProductDetailContents() {
                   </div>
                   <div class='add-tocart mr-20 mt-15 mt-sm-0'>
                     <p class='p-btn position-relative'>
-                      <Link to=''>
+                      <Link to='/cart'>
                         <span onClick={handleAddCart}>Add to cart</span>
                       </Link>
                     </p>

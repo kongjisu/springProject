@@ -4,10 +4,14 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function WishItem({ item, wishCheck, setWishCheck }) {
-  console.log(item);
   const [cartData, setCartData] = useState([]);
-
+  const [image, setImage] = useState();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    axios.get(`http://localhost:8080/image/getAll/${item.id}`)
+    .then(res => setImage(res.data[0]))
+  }, [])
 
   const deleteItem = () => {
     axios
@@ -16,7 +20,7 @@ function WishItem({ item, wishCheck, setWishCheck }) {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:8080/cartLists').then((res) => {
+    axios.get('http://localhost:8080/cart').then((res) => {
       setCartData(res.data);
     });
   }, []);
@@ -24,15 +28,12 @@ function WishItem({ item, wishCheck, setWishCheck }) {
   const addCart = () => {
     const putUrl = `http://localhost:3006/cartLists/${item.id}`;
 
-    const postUrl = 'http://localhost:3006/cartLists';
+    const postUrl = `http://localhost:8080/cart/add`;
     if (cartData.length === 0) {
       axios
         .post(postUrl, {
-          productName: item.productName,
-          id: item.id,
-          quantity: 1,
-          price: item.price,
-          titleImage: item.titleImage,
+          cartId : 1,
+          productId: cartData.id
         })
         .then((Response) => {
           if (Response.status === 201) {
@@ -45,7 +46,7 @@ function WishItem({ item, wishCheck, setWishCheck }) {
 
     for (let i = 0; i < cartData.length; i++) {
       console.log(i, cartData[i], item.id);
-      if (cartData[i].productName === item.productName) {
+      if (cartData[i].productName === item.product.id) {
         if (
           window.confirm(
             '이미 장바구니에 존재하는 상품입니다. 그래도 추가하시겠읍니까?'
@@ -97,7 +98,7 @@ function WishItem({ item, wishCheck, setWishCheck }) {
         <div className='d-flex'>
           <div className='cart-img'>
             <img
-              src={`./img/products/${item.titleImage}`}
+              src={image && `./img/products/${image.imageUrl}`}
               width='100px'
               height='129px'
               alt='product'

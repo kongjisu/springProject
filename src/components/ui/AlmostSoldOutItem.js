@@ -23,7 +23,7 @@ function AlmostSoldOutItem({ productId }) {
         <div className='news-img'>
           <Link to={`/detail/${productItem.id}`}>
             <img
-              src={`./img/products/${productItem.productTitleImage}`}
+              src={images.length > 0 && `./img/products/${images[0].imageUrl}`}
               alt='img1'
               width={350}
               height={350}

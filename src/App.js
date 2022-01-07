@@ -24,21 +24,32 @@ import { Box, Modal, Switch, Typography, Button } from '@mui/material';
 import Main from './components/page/Main';
 import Home from './components/page/Home';
 import Footer from './components/layout/Footers';
-import Test from './components/page/Test';
 import SignUp from './components/page/SignUp';
+import Header from './components/layout/Header';
+import ScrollTop from './components/layout/ScrollTop';
 
 function App() {
   
   
-  const [open, setOpen] = useState(false);
-    const handleOpen = () => {
-        setOpen(true);
-    }
-    
-      const handleClose = () => {
-        setOpen(false);
-    }
+  const [loginOpen, setLoginOpen] = useState(false);
+  const [signUpOpen, setSignUpOpen] = useState(false);
+  const handleLoginOpen = () => {
+    setLoginOpen(true);
+}
 
+  const handleLoginClose = () => {
+    setLoginOpen(false);
+}
+
+const handleSignUpOpen = () => {
+  setLoginOpen(false);
+  setSignUpOpen(true);
+}
+
+const handleSignUpClose = () => {
+  setSignUpOpen(false);
+  setLoginOpen(true);
+}
   // const [products, setProducts] = useState([]);
   // useEffect(()=>{
   //   // axios.get('http://localhost:8080/product/getAll').then(res => console.log(res.data));
@@ -48,28 +59,43 @@ function App() {
   //     price : 8000
   //   }).then(res => console.log(res));
   // },[]);
-  useEffect(() => {
 
-    axios.get('http://localhost:8080/image/getAll/1')
-      .then(res => console.log(res.data));
-  }, []);
   return (
 <>
     <Modal
-      open={open}
+      open={loginOpen}
       // onClose={handleClose}
       aria-labelledby="modal-modal-title"
       aria-describedby="modal-modal-description"
     >
-      <Login handleClose={handleClose}/>
+      <Login handleClose={handleLoginClose} handleOpen={handleSignUpOpen}/>
+    </Modal>
+    
+    <Modal
+      open={signUpOpen}
+    >
+     <SignUp handleClose={handleSignUpClose} />
     </Modal>
     <BrowserRouter>
-      <Routes>
+    <ScrollTop />
+    <TopScroll />
+        <Header handleOpen={handleLoginOpen} />        
+            <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/detail/:id" element={<ProductDetail />} />
+                <Route path="/ProductAll" element={<ProductAll />} />
+                <Route path="/wishList" element={<Wishlist />} />            
+            </Routes>            
+        <Footer />    
+    </BrowserRouter>
+
+
+    {/* <Routes>
         <Route path="/" element={<Test handleOpen={handleOpen} handleClose={handleClose}/>}/>
         <Route path="/signin" element={<Login />}/> 
         <Route path="/signup" element={<SignUp />}/>      
-      </Routes>
-    </BrowserRouter>
+      </Routes> */}
     </>
   );
 }

@@ -28,7 +28,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignUp() {
+export default function SignUp({handleClose}) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -47,8 +47,8 @@ export default function SignUp() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+    <ThemeProvider theme={theme} sx={{ padding: "30px" }}>
+      <Container component="main" maxWidth="xs"   sx={{backgroundColor:"white"}}>
         <CssBaseline />
         <Box
           sx={{
@@ -125,7 +125,7 @@ export default function SignUp() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="#" variant="body2" onClick={handleClose}>
                   Already have an account? Sign in
                 </Link>
               </Grid>
